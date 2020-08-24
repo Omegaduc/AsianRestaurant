@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/default_layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+
+
+    <div class="order_background">
+        <div id="order_word_container">
+            <div id="order_word">ORDER ONLINE</div>
+            <hr class="line">
+        </div>
+        <div id="order_container">
+            <div id="cate_selector">
+                <!--<button type="button" class="collapsible">Menu</button>-->
+                <div class="content">
+                    <div class="tab_menu" id="soup_tab">Soups</div>
+                    <div class="tab_menu" id="dumpling_tab">Dumplings</div>
+                </div>
+            </div>
+            <div id="food_selector">
+                <div id="black_menu_word">Menu</div>
+                <div id="line_container">
+                    <hr>
+                </div>
+                <div id="menu_name_container"><p id="p1">Soups</p></div>
+                <div id="order_menu">
+                    <div id="soup_menu"></div>
+                    <div id="dumpling_menu"></div>
+                    <div class="wrapper">
+                    </div>
+                </div>
+            </div>
+            <div id="bill_container">
+                <button class="button_removeAll">X</button>
+                <div id="bill"></div>
+                <div id="full_price"></div>
+
+                <button id="button_order" class="btn btn-primary" data-toggle="modal" data-target="#Modal3">ORDER</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div><input type="text" class="form-control" placeholder="Name" id="customer" ></div>
+                                <div><input type="text" class="form-control" placeholder="Phone number" id="phone" ></div>
+                                <div><input type="text" class="form-control" placeholder="Destination" id="destination" ></div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="Order_button">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/default_layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="background1">
+        <div class="hero-text">
+            <h1 id="big_word">Taste of the East</h1>
+            <h3>San Francisco's Most Acclaimed Asian Restaurant</h3>
+        </div>
+        <div id="space1" ></div>
+        <div id="foodcates_container_container">
+            <div id="foodcates_container" >
+                    <div class="foodcate">
+                        <img id="soup_image">
+                        <div id="soup_descrip">
+                            <hr class="rod">
+                            <h1 class="white_word" >SOUPS</h1>
+                            <h3 class="white_word">Description</h3>
+                        </div>
+                    </div>
+                    <div class="foodcate">
+                        <img id="noodle_image" >
+                        <div id="noodle_descrip" >
+                            <hr class="rod">
+                            <h1 class="white_word">NOODLES</h1>
+                            <h3 class="white_word">Description</h3>
+                        </div>
+                    </div>
+                    <div class="foodcate">
+                        <img id="dumpling_image">
+                        <div id="dumpling_descrip" >
+                            <hr class="rod">
+                            <h1 class="white_word">DUMPLINGS</h1>
+                            <h3 class="white_word">Description</h3>
+                        </div>
+                    </div>
+            </div>
+            <div id="set_menu_button">
+                <a href="/order"><b class="white_word">SET MENU</b></a>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="background2">
+        <div id="about_container">
+            <div class="rod_contanier" >
+                <hr class="rod">
+            </div>
+            <div data-aos="zoom-out-left"><h1 class="white_word">Our Story Begins In The East</h1></div>
+            <div data-aos="zoom-out-left"><p class="white_word_with_thick_line">I'm a paragraph. Click here to add
+                your
+                own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and
+                make
+                changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for
+                you
+                to tell a story and let your users know a little more about you.This is a great space to write long text
+                about your company and your services. You can use this space to go into a little more detail about your
+                company.</p></div>
+        </div>
+    </div>
+    <div class="background3">
+        <div id="motto_contanier">
+            <div class="rod_contanier">
+                <hr class="rod">
+            </div>
+            <div id="big_white_word_container" data-aos="zoom-out-right"><p id="big_white_word">"When
+                you
+                drink the water,</p></div>
+            <div data-aos="zoom-out-right"><p id="big_bold_white_word"> remember the
+                spring"</p></div>
+            <div id="white_word_container" data-aos="zoom-out-right"><p class="white_word">Yin Shui Si Yuan</p></div>
+        </div>
+    </div>
+    <div id="reservation" >
+        <div id="date" ></div>
+
+        <select name="time" id="time" class="custom-select custom-select-lg" style="width: fit-content">
+            <option class="option" value="10:00">10:00 AM</option>
+            <option class="option" value="10:30">10:30 AM</option>
+            <option class="option" value="11:00">11:00 AM</option>
+            <option class="option" value="11:30">11:30 AM</option>
+            <option class="option" value="12:00">12:00 PM</option>
+            <option class="option" value="12:30">12:30 PM</option>
+            <option class="option" value="13:00">1:00 PM</option>
+            <option class="option" value="13:30">1:30 PM</option>
+            <option class="option" value="14:00">2:00 PM</option>
+            <option class="option" value="14:30">2:30 PM</option>
+            <option class="option" value="15:00">3:00 PM</option>
+            <option class="option" value="15:30">3:30 PM</option>
+            <option class="option" value="16:00">4:00 PM</option>
+            <option class="option" value="16:30">4:30 PM</option>
+            <option class="option" value="17:00">5:00 PM</option>
+            <option class="option" value="17:30">5:30 PM</option>
+            <option class="option" value="18:00">6:00 PM</option>
+            <option class="option" value="18:30">6:30 PM</option>
+            <option class="option" value="19:00">7:00 PM</option>
+            <option class="option" value="19:30">7:30 PM</option>
+            <option class="option" value="20:00">8:00 PM</option>
+            <option class="option" value="20:30">8:30 PM</option>
+            <option class="option" value="21:00">9:00 PM</option>
+            <option class="option" value="21:30">9:30 PM</option>
+            <option class="option" value="22:00">10:00 PM</option>
+        </select>
+
+        <select name="Party size" id="party_size" class="custom-select custom-select-lg" style="width: fit-content">
+            <option class="option" value="1 person">1 person</option>
+            <option class="option" value="2 people">2 people</option>
+            <option class="option" value="3 people">3 people</option>
+            <option class="option" value="4 people">4 people</option>
+            <option class="option" value="5 people">5 people</option>
+            <option class="option" value="6 people">6 people</option>
+        </select>
+        <select name="Available tables" id="available_table" class="custom-select custom-select-lg " style="width: fit-content">
+            <option class="option" value="Table 1">Table 1</option>
+            <option class="option" value="Table 2">Table 2</option>
+            <option class="option" value="Table 3">Table 3</option>
+            <option class="option" value="Table 4">Table 4</option>
+            <option class="option" value="Table 5">Table 5</option>
+            <option class="option" value="Table 6">Table 6</option>
+        </select>
+        <button id="confirm_button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div><input type="text" class="form-control" placeholder="Name" id="customer_name" ></div>
+                            <div><input type="text" class="form-control" placeholder="Phone number" id="phone_number" ></div>
+                            <div><input type="text" class="form-control" placeholder="Recipient's email" id="rep_email"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="OK_button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

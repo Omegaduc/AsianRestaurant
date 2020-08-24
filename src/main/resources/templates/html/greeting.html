@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--/*@thymesVar id="name" type=""*/-->
+<p th:text="'Hello, ' + ${name} + '!'" />
+
+<button id="greetButton">Greet</button>
+<a id="homeButton" href="/">Home</a>
+
+<script> document.getElementById("greetButton").onclick = function() {myFunction()};
+document.getElementById("homeButton").onclick = function() {myFunction1()};
+
+function myFunction() {
+    var name1 = prompt("Enter your name:", "...");
+    window.open("localhost:8080/greeting?name=" + name1);
+}
+function myFunction1() {
+    window.open("localhost:8080/");
+}
+</script>
+</body>
+</html>

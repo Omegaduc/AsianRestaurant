@@ -1,0 +1,42 @@
+#Menu_word_container{
+    margin-left: 20%;margin-right:20%;padding-top: 150px
+}
+#Menu_word{
+    font-size: 50px;font-weight: 400;padding-left: 10px;color: #f2f2f2
+}
+#Menu_container{
+    overflow: hidden;justify-content: center;background-color: white; width:60%;margin: auto;padding-top: 100px
+}
+.big_black_line{
+    padding: 0.75px;margin: 10px;border-color: black;background-color: black
+}
+.menu_cate_name{
+    font-size: 25px;color: darkred;margin-left: 10px;
+}
+.dotted_line_length{
+    width:90%;margin: auto;
+}
+.foodname{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.foodprice{
+    right: 0px;
+}
+.dotted_line{
+    border-top:3px dotted #f00;color:#fff;background-color:#fff;
+}
+.fooditem{
+    display:flex;padding-left: 10px;padding-right: 10px;margin-top: 75px;margin-bottom: 75px;
+}
+.rod {
+    width: 50px;
+    padding-top: 5px;
+    background-color: rgba(169, 150, 95, 1);
+    border-color: rgba(169, 150, 95, 1)
+}
+.menu_background {
+    background: url('/media/menu_background.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}

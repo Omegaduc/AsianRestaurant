@@ -1,0 +1,166 @@
+.description {
+    margin-top: auto;
+    padding: 10px;
+    background-color: white;
+    text-align: left;
+    border: 1px;
+    font-weight: bolder;
+}
+
+.image_container {
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.wrapper > div {
+    margin: auto;
+    width: 245px;
+    height: 245px;
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    color: #d9480f;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+}
+
+.button_content {
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.order_background {
+    background: url('/media/order_background.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#order_word_container {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 150px
+}
+
+#order_word {
+    font-size: 50px;
+    font-weight: 400;
+    padding-left: 10px;
+    color: #f2f2f2
+}
+
+#order_container {
+    overflow: hidden;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    width: 60%;
+    margin: auto
+}
+
+#cate_selector {
+    width: 15%;
+    border: solid;
+    border-color: black
+}
+
+.tab_menu {
+    cursor: pointer;
+}
+.tab_menu:hover{
+    background-color: red;
+    color: white;
+}
+.active{
+    background-color: red;
+    color: white;
+}
+
+#soup_tab {
+    padding: 10px
+}
+
+#dumpling_tab {
+    padding: 10px
+}
+
+#black_menu_word {
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#line_container {
+    padding-top: 20px;
+    width: 45%;
+    margin: auto
+}
+
+#menu_name_container {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px
+}
+
+#dumpling_menu {
+    display: none;
+}
+
+#bill_container {
+    width: 25%;
+    border: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: column
+}
+#bill{
+}
+
+#food_selector {
+    width: 60%;
+    border: solid;
+    border-color: black
+}
+.button_add{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.button_subtract{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.button_removeAll{
+    padding: 10px;
+    border-width: thin;
+    cursor: pointer;
+}
+.button_remove{
+    margin: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

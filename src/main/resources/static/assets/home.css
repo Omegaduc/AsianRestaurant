@@ -1,0 +1,196 @@
+.rod_contanier {
+    margin-right: 100%
+}
+
+.white_word_with_thick_line {
+    line-height: 1.5;
+    color: white
+}
+
+.background1 {
+    height: 1150px;
+    background: url('/media/home_background.png') no-repeat fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.background2 {
+    height: 800px;
+    background: url('/media/background2.png') no-repeat fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.background3 {
+    height: 900px;
+    background: url('/media/background3.png') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.foodcate {
+    opacity: 1.5;
+    margin: auto;
+    position: relative;
+}
+
+#motto_contanier {
+    width: 45%;
+    float: left;
+    height: 400px;
+    padding-top: 160px;
+    padding-left: 26%;
+}
+
+#big_white_word {
+    font-size: 50px;
+    color: white
+}
+
+#big_bold_white_word {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white
+}
+
+#big_white_word_container {
+    margin-bottom: 0
+}
+
+#white_word_container {
+    margin-top: 50px
+}
+
+#soup_descrip {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+
+#noodle_descrip {
+    position: absolute;
+    top: 10%;
+    padding-left: 26%;
+    padding-right: 26%;
+    text-align: center
+}
+
+#dumpling_descrip {
+    position: absolute;
+    top: 10%;
+    padding-left: 21%;
+    padding-right: 21%;
+    text-align: center
+}
+
+#set_menu_button {
+    background-color: darkred;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+}
+
+#big_word {
+    font-size: 50px
+}
+
+#foodcates_container {
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+#foodcates_container_container {
+    display: grid;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .9);
+    height: 500px
+}
+
+#space1 {
+    height: 650px;
+}
+
+#soup_image {
+    content: url('/media/soup.png');
+    height: 400px;
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#noodle_image {
+    content: url('/media/noodle.png');
+    height: 400px;
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#dumpling_image {
+    content: url('/media/dumpling.png');
+    height: 400px;
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#about_container {
+    width: 50rem;
+    float: right;
+    height: 400px;
+    padding-top: 160px;
+    padding-right: 260px
+}
+#reservation{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+#date{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#party_size{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#available_table{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#confirm_button{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.year{
+    height: 50px;
+}
+.month{
+    height: 50px;
+}
+.day{
+    height: 50px;
+}
+.option{
+
+}
