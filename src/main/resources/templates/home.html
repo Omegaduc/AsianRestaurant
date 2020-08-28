@@ -125,19 +125,32 @@
         <button id="confirm_button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now</button>
 
         <!-- Modal -->
+        <form>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div><input type="text" class="form-control" placeholder="Name" id="customer_name" ></div>
-                            <div><input type="text" class="form-control" placeholder="Phone number" id="phone_number" ></div>
-                            <div><input type="text" class="form-control" placeholder="Recipient's email" id="rep_email"></div>
+                        <div><input type="text" class="form-control" placeholder="Name" id="customer_name" required>
+                            <div class="invalid-feedback">
+                                Please provide a name.
+                            </div>
+                        </div>
+                        <div><input type="text" class="form-control" placeholder="Phone number" id="phone_number" required>
+                            <div class="invalid-feedback">
+                                Please provide a phone number.
+                            </div>
+                        </div>
+                        <div><input type="text" class="form-control" placeholder="Recipient's email" id="rep_email" required>
+                            <div class="invalid-feedback">
+                                Please provide an email.
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

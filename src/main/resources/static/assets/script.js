@@ -23,6 +23,7 @@ $("#date").dropdownDatepicker({
 //get data to add to Menu
 $.get("/api/foods", function (data) {
 
+
     //add Soup to menu and lines
     $("#Menu_container").append(`<hr class="big_black_line" >
             <b class="menu_cate_name" >Soup</b>
@@ -359,7 +360,7 @@ $(document).ready(function () {
                     let phoneNumber = $('#phone_number').val();
                     let email = $('#rep_email').val();
                     let customerName = $('#customer_name').val();
-                    console.log(createdDate + " " + time);
+                    if(phoneNumber != "" || email != ""){
                     $.post("/api/reserve", {
                         "customerName": customerName,
                         "phone": phoneNumber,
@@ -368,19 +369,21 @@ $(document).ready(function () {
                         "partySize": partySize,
                         "tableNum": tableNum
                     }).done(function () {
-                        alert("Data Loaded: ");
-                    });
+                        alert("Data Is Loaded: ");
+                    });} else alert("Data is not loaded, please provide a phone number or an email address ");
                 });
             }
         });
 
         //script for order button after choosing food
         $('body').on('click', '#Order_button', function () {
+            if(fullPrice != 0){
             let customer = $('#customer').val();
             let phone = $('#phone').val();
             let destination = $('#destination').val();
             let description = document.getElementById('bill').textContent;
             let price = document.getElementById('price').textContent;
+            if(phone != "" && destination != ""){
             $.post("/api/delivery_order", {
                 "customer": customer,
                 "phone": phone,
@@ -388,8 +391,15 @@ $(document).ready(function () {
                 "price": price,
                 "destination": destination,
             }).done(function () {
-                alert("Data Loaded: ");
-            });
+                alert("Data Is Loaded: ");
+            });} else alert("Data is not loaded, please provide a phone number and a destination");} else alert("Choose some foods first");
         });
+
+    $('body').on('click', '#button_order', function () {
+        if(fullPrice == 0) {
+            alert("Choose some foods first");
+            return false;
+        }
+    });
     }
 );
